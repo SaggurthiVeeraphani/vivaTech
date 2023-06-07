@@ -2,7 +2,7 @@ package com.example.VivaTech.Controller;
 
 import com.example.VivaTech.Model.AuthRequest;
 import com.example.VivaTech.Service.OtpService;
-import com.example.VivaTech.Service.UserDetailsService;
+import com.example.VivaTech.Service.UserDetailsServiceInfo;
 import com.example.VivaTech.Util.JwtUtil;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.authentication.AuthenticationManager;
@@ -22,7 +22,7 @@ public class AuthenticationController {
     @Autowired
     private JwtUtil jwtTokenUtil;
     @Autowired
-    private UserDetailsService userDetailsService;
+    private UserDetailsServiceInfo userDetailsService;
     @Autowired
     private OtpService otpService;
 

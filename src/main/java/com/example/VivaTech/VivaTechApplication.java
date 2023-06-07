@@ -4,19 +4,19 @@ import com.example.VivaTech.Configuration.TwilioConfiguration;
 import com.example.VivaTech.Model.user;
 import com.example.VivaTech.Respository.UserRepository;
 import com.twilio.Twilio;
-import io.swagger.v3.oas.annotations.OpenAPIDefinition;
-import io.swagger.v3.oas.annotations.info.Info;
 import jakarta.annotation.PostConstruct;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.context.annotation.Configuration;
 
 import java.util.List;
 import java.util.stream.Collectors;
 import java.util.stream.Stream;
 
 @SpringBootApplication
-@OpenAPIDefinition( info = @Info(title = "Spring boot otp authentication",version = "1.0.0"))
+@Configuration
+//@OpenAPIDefinition( info = @Info(title = "Spring boot otp authentication",version = "1.0.0"))
 public class VivaTechApplication {
 	@Autowired
 	private UserRepository repository;
