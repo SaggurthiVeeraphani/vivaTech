@@ -14,8 +14,8 @@ import java.util.List;
 import java.util.stream.Collectors;
 import java.util.stream.Stream;
 
+
 @SpringBootApplication
-@Configuration
 //@OpenAPIDefinition( info = @Info(title = "Spring boot otp authentication",version = "1.0.0"))
 public class VivaTechApplication {
 	@Autowired

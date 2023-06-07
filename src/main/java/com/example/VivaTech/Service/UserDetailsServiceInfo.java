@@ -17,6 +17,8 @@ import java.util.Collection;
 public class UserDetailsServiceInfo implements UserDetailsService {
     @Autowired
     private UserRepository userRepository;
+
+    @Override
     public UserDetails loadUserByUsername(String phoneNo) throws UsernameNotFoundException {
         user user1 = userRepository.findByUserName(phoneNo);
         if(user1 == null){
